@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
 export default function Home() {
@@ -17,9 +18,9 @@ export default function Home() {
         <p className="text-lg text-center text-gray-700 max-w-xl">
           Your companion for planning and exploring amazing destinations.
         </p>
-        <a className="btn mt-4" href="/signup">
+        <Button variant="default" className="mt-4">
           Get Started
-        </a>
+        </Button>
       </main>
     </div>
   );
