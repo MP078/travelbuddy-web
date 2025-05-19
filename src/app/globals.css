@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+:root {
+    --primary: #2196f3;
+    --accent: #ff9800;
+    --background: #f4f8fb;
+    --text: #222;
+    --card: #fff;
+    --border: #e0e7ef;
+    --border-radius: 10px;
+    --font-family: 'Inter', Arial, sans-serif;
+}
+
+@theme inline {
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --font-sans: var(--font-geist-sans);
+    --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --background: #0a0a0a;
+        --foreground: #ededed;
+    }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    min-height: 100%;
+    background: var(--background);
+    color: var(--text);
+    font-family: var(--font-family);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: var(--accent);
+}
+
+button {
+    font-family: inherit;
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 0.6em 1.5em;
+    background: var(--primary);
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px rgba(33, 150, 243, 0.08);
+}
+
+button:hover {
+    background: var(--accent);
+}
+
+.card {
+    background: var(--card);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 12px rgba(33, 150, 243, 0.05);
+    border: 1px solid var(--border);
+    padding: 2rem;
+}
