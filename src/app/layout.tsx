@@ -28,16 +28,6 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header className="w-full py-6 px-8 bg-white shadow-sm flex justify-between items-center">
-          <span className="text-xl font-bold text-[color:var(--primary)]">
-            TravelBuddy
-          </span>
-          <nav>
-            <a href="/signup" className="btn ml-4">
-              Get Started
-            </a>
-          </nav>
-        </header>
         {children}
       </body>
     </html>
