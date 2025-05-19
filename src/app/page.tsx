@@ -1,3 +1,5 @@
+"use client";
+
 import ExpandedDestinations from "@/components/pages/landing/ExpandedDestinations";
 import FindTravelBuddies from "@/components/pages/landing/FindTravelBuddies";
 import Footer from "@/components/pages/landing/Footer";
