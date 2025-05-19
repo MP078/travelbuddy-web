@@ -2,11 +2,14 @@
     "name": "travelbuddy-web",
     "version": "0.1.0",
     "private": true,
+    "type": "module",
     "scripts": {
         "dev": "next dev --turbopack --port 3001",
         "build": "next build",
         "start": "next start",
-        "lint": "next lint"
+        "lint": "next lint",
+        "g": "node scripts/generator.js",
+        "generate": "node scripts/generator.js"
     },
     "dependencies": {
         "@radix-ui/react-slot": "^1.2.2",
