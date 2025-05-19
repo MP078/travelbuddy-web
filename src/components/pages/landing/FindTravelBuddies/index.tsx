@@ -66,34 +66,18 @@ const FindTravelBuddies = () => {
               </div>
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <Image
-                height={1000}
-                width={1000}
-                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300"
-                alt="Traveler"
-                className="rounded-lg h-40 object-cover"
-              />
-              <Image
-                height={1000}
-                width={1000}
-                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300"
-                alt="Traveler"
-                className="rounded-lg h-40 object-cover mt-8"
-              />
-              <Image
-                height={1000}
-                width={1000}
-                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300"
-                alt="Traveler"
-                className="rounded-lg h-40 object-cover"
-              />
-              <Image
-                height={1000}
-                width={1000}
-                src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=300"
-                alt="Traveler"
-                className="rounded-lg h-40 object-cover mt-8"
-              />
+              {[1, 2, 3, 4].map((num, idx) => (
+                <Image
+                  key={num}
+                  height={1000}
+                  width={1000}
+                  src={`/images/landing/people/${num}.png`}
+                  alt={`Traveler ${num}`}
+                  className={`rounded-lg h-40 object-cover${
+                    idx % 2 === 1 ? " mt-8" : ""
+                  }`}
+                />
+              ))}
             </div>
           </div>
         </div>

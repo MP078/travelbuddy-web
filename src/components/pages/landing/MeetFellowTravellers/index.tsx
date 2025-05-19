@@ -12,25 +12,22 @@ const MeetFellowTravellers = () => {
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {[
           {
-            name: "Sarah Chen",
-            image:
-              "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200",
-            destination: "Planning trip to Everest Base Camp",
-            interests: "Hiking, Photography, Culture",
+            name: "Rae Lil Black",
+            image: "/images/landing/people/1.png",
+            destination: "Backpacking across Southeast Asia",
+            interests: "Food, Nightlife, Beaches",
           },
           {
-            name: "Mike Johnson",
-            image:
-              "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200",
-            destination: "Exploring Kathmandu Valley",
-            interests: "Architecture, Food, History",
+            name: "Sydney Sweeney",
+            image: "/images/landing/people/4.png",
+            destination: "Exploring European cities",
+            interests: "Art, Fashion, History",
           },
           {
-            name: "Emma Wilson",
-            image:
-              "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200",
-            destination: "Visiting Pokhara",
-            interests: "Adventure Sports, Nature, Yoga",
+            name: "Tru Kait",
+            image: "/images/landing/people/2.png",
+            destination: "Adventure in South America",
+            interests: "Hiking, Wildlife, Culture",
           },
         ].map((traveler, index) => (
           <div key={index} className="bg-white rounded-lg p-6 shadow-lg">

@@ -69,7 +69,7 @@ const Hero = () => {
       <Image
         height={1000}
         width={2000}
-        src={"/images/hero.png"}
+        src={"/images/landing/hero.png"}
         alt="Nepal Landscape"
         className="w-full h-full object-cover"
         priority
