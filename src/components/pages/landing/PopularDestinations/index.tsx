@@ -10,22 +10,19 @@ const PopularDestinations = () => {
       {[
         {
           name: "Pokhara",
-          image:
-            "https://images.unsplash.com/photo-1605640840605-14ac1855827b?auto=format&fit=crop&w=600&h=400",
+          image: "/images/landing/destinations/pokhara.png",
           description: "Paradise with Mountain Views",
           travelers: 245,
         },
         {
           name: "Kathmandu",
-          image:
-            "https://images.unsplash.com/photo-1582654454409-778f6619ddc6?auto=format&fit=crop&w=600&h=400",
+          image: "/images/landing/destinations/ktm.png",
           description: "Cultural Heart of Nepal",
           travelers: 312,
         },
         {
           name: "Chitwan",
-          image:
-            "https://images.unsplash.com/photo-1581793745862-99fde7fa73d2?auto=format&fit=crop&w=600&h=400",
+          image: "/images/landing/destinations/chitwan.png",
           description: "Wildlife Safari Adventure",
           travelers: 178,
         },

@@ -59,8 +59,6 @@ export const PLACES = [
     "Kathmandu, Koteshwor",
     "Kathmandu, Bhaktapur Road",
     "Kathmandu, Chabahil",
-    "Kathmandu, Gausala",
-    "Kathmandu, Sinamangal",
     "Kathmandu, Gaushala",
     "Kathmandu, Chhetrapati",
     "Kathmandu, Samakhusi",
@@ -102,6 +100,21 @@ export const PLACES = [
     "Kathmandu, Lainchaur",
     "Kathmandu, Gairidhara",
     "Kathmandu, Panipokhari",
+    "Kathmandu, Ichangu Narayan Temple",
+    "Kathmandu, Tokha Chandeshwari Temple",
+    "Kathmandu, Manjushree Park",
+    "Kathmandu, Matatirtha",
+    "Kathmandu, Bishnudwar",
+    "Kathmandu, Taudaha Bird Sanctuary",
+    "Kathmandu, Karya Binayak Temple",
+    "Kathmandu, Bajrabarahi Temple",
+    "Kathmandu, Chhauni Museum",
+    "Kathmandu, Bhimdhunga",
+    "Kathmandu, Dahachok Viewpoint",
+    "Kathmandu, Ramkot",
+    "Kathmandu, Goldhunga",
+    "Kathmandu, Tarkeshwor Mahadev",
+    "Kathmandu, Tokha Jhor Waterfall",
 
     "Patan, Patan Durbar Square",
     "Patan, Krishna Mandir",
@@ -135,6 +148,10 @@ export const PLACES = [
     "Patan, Dhapakhel",
     "Patan, Bhaisepati",
     "Patan, Sainbu",
+    "Patan, Ashok Chaitya",
+    "Patan, Bungmati Museum",
+    "Patan, Chyasal",
+    "Patan, Pimbahal Pond",
 
     "Bhaktapur, Bhaktapur Durbar Square",
     "Bhaktapur, Nyatapola Temple",
@@ -164,6 +181,10 @@ export const PLACES = [
     "Bhaktapur, Gundu",
     "Bhaktapur, Nagadesh",
     "Bhaktapur, Kamalbinayak",
+    "Bhaktapur, Pilot Baba Ashram",
+    "Bhaktapur, Suryabinayak Forest",
+    "Bhaktapur, Chhaling",
+    "Bhaktapur, Pilot Baba Meditation Center",
 
     // Pokhara
     "Pokhara, Phewa Lake",
@@ -267,6 +288,13 @@ export const PLACES = [
     "Pokhara, Trekking to Gaurishankar Conservation Area",
     "Pokhara, Trekking to Api Nampa Conservation Area",
     "Pokhara, Trekking to Krishnasar Conservation Area",
+    "Pokhara, Methlang Hill",
+    "Pokhara, Pame",
+    "Pokhara, Peace Cave",
+    "Pokhara, Bhairab Tole",
+    "Pokhara, Batulechour",
+    "Pokhara, Armala Village",
+    "Pokhara, Dhampus Village",
 
     // Chitwan
     "Chitwan, Chitwan National Park",
@@ -285,6 +313,9 @@ export const PLACES = [
     "Chitwan, Kasara",
     "Chitwan, Patihani",
     "Chitwan, Madi Valley",
+    "Chitwan, Upardang Gadhi",
+    "Chitwan, Siraichuli Hill",
+    "Chitwan, Chepang Hill Trail",
 
     // Lumbini
     "Lumbini, Maya Devi Temple",
@@ -303,6 +334,7 @@ export const PLACES = [
     "Lumbini, Araurakot",
     "Lumbini, Devdaha",
     "Lumbini, Siddhartha Nagar",
+    "Lumbini, Kudan Stupa",
 
     // Everest Region
     "Everest Region, Everest Base Camp",
@@ -540,6 +572,10 @@ export const PLACES = [
     "Meghalaya, Mawlyngbna",
     "Meghalaya, Shnongpdeng",
     "Meghalaya, Smit Village",
+    "Meghalaya, Mawphanlur",
+    "Meghalaya, Nongkhnum Island",
+    "Meghalaya, Mawryngkhang Bamboo Trail",
+    "Meghalaya, Laitlum Grand Canyon",
 
     "Sikkim, Gangtok",
     "Sikkim, Tsomgo Lake",
@@ -559,6 +595,10 @@ export const PLACES = [
     "Sikkim, Khecheopalri Lake",
     "Sikkim, Buddha Park",
     "Sikkim, Temi Tea Garden",
+    "Sikkim, Dzongu",
+    "Sikkim, Zemu Glacier",
+    "Sikkim, Borong Hot Springs",
+    "Sikkim, Rinchenpong",
 
     "Darjeeling, Tiger Hill",
     "Darjeeling, Batasia Loop",
@@ -574,6 +614,10 @@ export const PLACES = [
     "Darjeeling, Observatory Hill",
     "Darjeeling, Padmaja Naidu Himalayan Zoological Park",
     "Darjeeling, Himalayan Mountaineering Institute",
+    "Darjeeling, Lepchajagat",
+    "Darjeeling, Lamahatta",
+    "Darjeeling, Tinchuley",
+    "Darjeeling, Chatakpur",
 
     "Kalimpong, Deolo Hill",
     "Kalimpong, Durpin Monastery",
@@ -581,6 +625,9 @@ export const PLACES = [
     "Kalimpong, Zang Dhok Palri Phodang Monastery",
     "Kalimpong, Teesta River",
     "Kalimpong, Thongsha Gumpha",
+    "Kalimpong, Lava",
+    "Kalimpong, Rishop",
+    "Kalimpong, Neora Valley National Park",
 
     "Assam, Guwahati",
     "Assam, Kamakhya Temple",
@@ -589,5 +636,93 @@ export const PLACES = [
     "Assam, Majuli Island",
     "Assam, Sualkuchi",
     "Assam, Hajo",
-    "Assam, Pobitora Wildlife Sanctuary"
+    "Assam, Pobitora Wildlife Sanctuary",
+    "Assam, Haflong",
+    "Assam, Umrangso",
+    "Assam, Manas National Park",
+    "Assam, Dibru Saikhowa National Park",
+    "Assam, Sivasagar",
+    "Assam, Hoollongapar Gibbon Sanctuary",
+
+    // Additional unique places
+    "Gorkha, Barpak Village",
+    "Gorkha, Laprak Village",
+    "Gorkha, Baraha Pokhari",
+    "Gorkha, Sita Cave",
+
+    "Lamjung, Ghale Gaun",
+    "Lamjung, Bhujung Village",
+    "Lamjung, Rainaskot",
+
+    "Tanahun, Bandipur Silk Farm",
+    "Tanahun, Siddha Gufa (Cave)",
+    "Tanahun, Ramkot Village",
+
+    "Syangja, Chapakot",
+    "Syangja, Waling",
+    "Syangja, Sirubari Village",
+
+    "Palpa, Ranimahal",
+    "Palpa, Tansen Old Bazaar",
+    "Palpa, Shreenagar Hill",
+
+    "Makwanpur, Chitlang Organic Village",
+    "Makwanpur, Markhu",
+    "Makwanpur, Indra Sarovar Lake",
+
+    "Sindhupalchok, Bhotekoshi River",
+    "Sindhupalchok, Jalbire Waterfall",
+    "Sindhupalchok, Helambu Village",
+    "Sindhupalchok, Melamchi Bazaar",
+
+    "Kavre, Namobuddha",
+    "Kavre, Panauti",
+    "Kavre, Dhulikhel Old Town",
+
+    "Nuwakot, Kakani",
+    "Nuwakot, Samari Bhanjyang",
+
+    "Rasuwa, Gatlang Village",
+    "Rasuwa, Chilime Hot Spring",
+    "Rasuwa, Tatopani Hot Spring",
+
+    "Dolakha, Kalinchowk Bhagwati Temple",
+    "Dolakha, Jiri",
+    "Dolakha, Sailung",
+
+    "Ramechhap, Manthali",
+    "Ramechhap, Khandadevi Temple",
+
+    "Okhaldhunga, Halesi Mahadev",
+
+    "Ilam, Sandakpur",
+    "Ilam, Fikkal",
+    "Ilam, Shree Antu",
+    "Ilam, Chhintapu",
+
+    "Taplejung, Olangchung Gola",
+    "Taplejung, Ghunsa Village",
+
+    "Bhojpur, Tyamke Danda",
+    "Bhojpur, Dingla Bazaar",
+
+    "Terhathum, Hyatrung Waterfall",
+    "Terhathum, Myanglung",
+
+    "Panchthar, Chilingdin",
+    "Panchthar, Yasok",
+
+    "Doti, Khaptad National Park",
+    "Doti, Dipayal Silgadhi",
+
+    "Bajura, Martadi",
+
+    "Bajhang, Surma Sarovar",
+    "Bajhang, Chainpur",
+
+    "Kalikot, Raskot",
+    "Kalikot, Phukot Lake",
+
+    "Jumla, Rara National Park",
+
 ];
