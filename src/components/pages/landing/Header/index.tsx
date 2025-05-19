@@ -24,11 +24,11 @@ const Header = () => {
     <header className="bg-white border-b border-gray-200">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center space-x-8">
-          <div className="text-2xl font-bold flex items-center">
+          <Link href="/" className="text-2xl font-bold flex items-center">
             <MapPin className="text-brand-orange" />
             <span className="text-brand-dark-gray">Travel</span>
             <span className="text-brand-orange">Buddy</span>
-          </div>
+          </Link>
           {/* Desktop Nav */}
           <nav className="hidden md:flex space-x-6">
             {navLinks.map((link) => (
