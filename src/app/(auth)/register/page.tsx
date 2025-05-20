@@ -1,5 +1,5 @@
 import { AuthLayout } from "@/components/auth/layout/AuthLayout";
-import RegisterForm from "@/components/auth/RegisterForm";
+import { RegisterForm } from "@/components/auth/RegisterForm";
 import React from "react";
 
 export default function Register() {
