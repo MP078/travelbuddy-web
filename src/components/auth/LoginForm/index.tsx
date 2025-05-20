@@ -8,6 +8,7 @@ import Image from "next/image";
 import { auth } from "@/lib/api";
 import { Button } from "@/components/ui/button";
 import { FormInput } from "../FormInput";
+import { useUserStore } from "@/store/useUserStore";
 
 type AuthFormState = {
   email: string;
@@ -17,12 +18,14 @@ type AuthFormState = {
 
 export function LoginForm() {
   const router = useRouter();
+  const setUser = useUserStore((state) => state.setUser);
   const [formData, setFormData] = useState<AuthFormState>({
     email: "",
     password: "",
     isLoading: false,
   });
   const [errors, setErrors] = useState<Partial<AuthFormState>>({});
+  const [authError, setAuthError] = useState<string | null>(null);
 
   const validateForm = () => {
     const newErrors: Partial<AuthFormState> = {};
@@ -38,6 +41,7 @@ export function LoginForm() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setAuthError(null);
     if (!validateForm()) return;
 
     setFormData((prev) => ({ ...prev, isLoading: true }));
@@ -46,11 +50,34 @@ export function LoginForm() {
       const { email, password } = formData;
       const data = await auth.login(email, password);
 
-      console.log("Login successful:", data);
-      router.refresh(); // or router.push("/dashboard") if you want to redirect
-    } catch (error) {
+      setUser({
+        email: data.email,
+        name: data.name,
+        image_url: "",
+        verified: false,
+        total_trips: 0,
+        travel_days: 0,
+        connections: 0,
+        member_since: "",
+        interests: [],
+        languages: [],
+        website: "",
+        certifications: [],
+        bio: "",
+        about: "",
+        location: "",
+        phone: "",
+      });
+
+      router.push("/dashboard");
+    } catch (error: unknown) {
+      const err = error as { status?: number; response?: { status?: number } };
+      if (err?.status === 401 || err?.response?.status === 401) {
+        setAuthError("Incorrect email or password.");
+      } else {
+        setAuthError("Login failed. Please try again.");
+      }
       console.error("Login failed:", error);
-      // Optional: Set error state or show toast
     } finally {
       setFormData((prev) => ({ ...prev, isLoading: false }));
     }
@@ -66,6 +93,11 @@ export function LoginForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
+      {authError && (
+        <div className="text-red-600 text-center text-sm font-medium">
+          {authError}
+        </div>
+      )}
       <FormInput
         id="email"
         name="email"
